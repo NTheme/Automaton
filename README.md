@@ -1,18 +1,49 @@
 # Useful algorithms for Finite and Pushdown context-free automatons
 
 ## Build & Run
-### 1. Clone the repo and go to project folder
+
+#### 1. Clone the repo and go to project folder
   ```sh
   git clone https://github.com/NTheme/Finite-Automaton.git
   cd Automaton
   ```
 
-### 2. Now you can start to build and install. num_cores is a number of your processor's cores (usually 16)
+#### 2. Now you can start to build and install. num_cores is a number of your processor's cores (usually 16)
   ```sh
   cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
   cmake --build build --config Release -- -j <num_cores + 1>
   sudo cmake --install build
   ```
+
+
+### Compile & Install
+
+#### 2. Now you can start to build and install. num_cores is a number of your processor's cores (usually 16)
+  ```sh
+  cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=. -G"Unix Makefiles"
+  cmake --build build --config Release -- -j <num_cores + 1>
+  sudo cmake --install build
+  ```
+
+#### 3. Launch
+  ```
+  Automaton <flags>
+  ```
+  
+  
+### Testing algorithms
+  Add flags ```-DTEST_EARLEY=1``` or ```-DTEST_LR1=1``` to check aldorithms on automatic tests.
+  Compiled files will be stored in ```CMAKE_INSTALL_PREFIX/bin```
+
+### Testing coverage
+#### 2. Compile a coverage
+  ```shell
+  cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug -DTEST_COVERAGE=1 -G"Unix Makefiles"
+  cd build
+  make test_coverage -j <num_cores + 1>
+  ```
+  Coverage report will appear in ```build/coverage``` (of course if you're not me and lucky enough to deal with lcov...)
+
 
 ## Usage
 
@@ -34,4 +65,4 @@
     * erly: Use Earley's algorithm to check if a word can be recognized
     * alr1: Use LR-1 algorithm to check if a word can be recognized
 
-### Then follow the instructions
+### Then follow the instructions from the program
