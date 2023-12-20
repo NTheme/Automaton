@@ -23,7 +23,7 @@ void notifyUsage() {
 
       "> -a: Select an automaton\n"
       "----> frla: Finite automaton\n"
-      "----> pcfa: Pushdown context-free automaton\n\n"
+      "----> pcfa: Pushdown Context-Free automaton\n\n"
 
       "> -t: Depends on the previous option value\n"
       "--> Finite automaton was selected\n"
