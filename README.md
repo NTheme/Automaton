@@ -1,4 +1,4 @@
-# Useful algorithms for Finite and Pushdown context-free automatons
+# Useful algorithms for Finite and Pushdown Context-Free automatons
 
 ## Build & Run
 
