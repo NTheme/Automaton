@@ -162,8 +162,7 @@ void finiteATOR() {
 }
 
 void pushdownParser(Parser* parser) {
-  Grammar grammar = readGrammar();
-  parser->fit(grammar);
+  parser->fit(readGrammar());
 
   size_t nword;
   communicate("Enter a number of words: ", nword);
