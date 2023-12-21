@@ -59,3 +59,7 @@
     * alr1: Use LR-1 algorithm to check if a word can be recognized
 
 ### Then follow the instructions from the program
+
+----------------------------
+
+### ***By NThemeDEV***
