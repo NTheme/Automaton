@@ -8,13 +8,6 @@
   cd Automaton
   ```
 
-#### 2. Now you can start to build and install. num_cores is a number of your processor's cores (usually 16)
-  ```sh
-  cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
-  cmake --build build --config Release -- -j <num_cores + 1>
-  sudo cmake --install build
-  ```
-
 
 ### Compile & Install
 
