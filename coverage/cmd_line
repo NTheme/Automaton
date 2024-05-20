@@ -1,1 +1,0 @@
-genhtml -o coverage /mnt/d/Workfiles/Programming/Projects/Finite-Automaton/build/coverage.info.cleaned

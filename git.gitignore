@@ -1,0 +1,12 @@
+# ****************************************** #
+# *  Author  : NTheme - All rights reserved
+# *  Created : 20 May 2024, 12:32 PM
+# *  File    : git.py
+# *  Project : Algorithm
+# ****************************************** #
+
+bin/
+build/
+cmake-build-debug/
+.idea/
+.vscode/
